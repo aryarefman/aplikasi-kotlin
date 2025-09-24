@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Ellipse penuh -->
+    <path
+        android:pathData="M60,30 C88,30 100,50 100,60 C100,70 88,90 60,90 C32,90 20,70 20,60 C20,50 32,30 60,30 z"
+        android:fillColor="#607D8B"/>
+</vector>

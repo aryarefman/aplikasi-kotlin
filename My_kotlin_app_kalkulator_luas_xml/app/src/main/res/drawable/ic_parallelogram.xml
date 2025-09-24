@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <!-- Parallelogram dengan skew -->
+    <path
+        android:pathData="M4.2,4.2L23.8,4.2L21,23.8L1.4,23.8z"
+        android:fillColor="#9C27B0" />
+</vector>

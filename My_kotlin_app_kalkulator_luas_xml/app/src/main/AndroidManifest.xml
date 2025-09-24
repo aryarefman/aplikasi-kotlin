@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission for loading YouTube thumbnails and opening links -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My_kotlin_app_kalkulator_luas_B">
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.My_kotlin_app_kalkulator_luas_B">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Circle Activity -->
+        <activity
+            android:name=".CircleActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Lingkaran"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Ellipse Activity -->
+        <activity
+            android:name=".EllipsActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Elips"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Square Activity -->
+        <activity
+            android:name=".SquareActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Persegi"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Rectangle Activity -->
+        <activity
+            android:name=".RectangleActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Persegi Panjang"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Triangle Activity -->
+        <activity
+            android:name=".TriangleActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Segitiga"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Parallelogram Activity -->
+        <activity
+            android:name=".ParallelogramActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Jajar Genjang"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Trapezium Activity -->
+        <activity
+            android:name=".TrapeziumActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Trapesium"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Kite Activity -->
+        <activity
+            android:name=".KiteActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Layang-layang"
+            android:parentActivityName=".MainActivity" />
+
+        <!-- Rhombus Activity -->
+        <activity
+            android:name=".RhombusActivity"
+            android:exported="false"
+            android:label="Kalkulator Luas Belah Ketupat"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

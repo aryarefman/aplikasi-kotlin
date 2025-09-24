@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Theme.KalkulatorLuas" parent="Theme.Material3.DayNight">
+        ...
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.KalkulatorLuas.Splash" parent="Theme.SplashScreen">
+        ...
+    </style>
+
+    <!-- Typography Styles -->
+    <style name="TextAppearance.KalkulatorLuas.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        ...
+    </style>
+
+    <!-- Shape Styles -->
+    <style name="ShapeAppearance.KalkulatorLuas.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        ...
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.KalkulatorLuas.Button" parent="Widget.Material3.Button">
+        ...
+    </style>
+
+    <!-- TextInputLayout Styles -->
+    <style name="Widget.KalkulatorLuas.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        ...
+    </style>
+
+    <!-- Card Styles -->
+    <style name="Widget.KalkulatorLuas.CardView" parent="Widget.Material3.CardView.Elevated">
+        ...
+    </style>
+
+    <!-- Tambahan Theme supaya sesuai Manifest -->
+    <style name="Theme.My_kotlin_app_kalkulator_luas_B" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/primary</item>
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+
+</resources>

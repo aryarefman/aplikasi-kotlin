@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="28dp"
+    android:height="28dp"
+    android:viewportWidth="28"
+    android:viewportHeight="28">
+    <!-- Persegi dengan ukuran 70% dari canvas, centered -->
+    <path
+        android:pathData="M4.2,4.2h19.6v19.6H4.2z"
+        android:fillColor="#E91E63" />
+</vector>

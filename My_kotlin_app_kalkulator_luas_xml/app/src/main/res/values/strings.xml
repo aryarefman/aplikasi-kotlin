@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kalkulator Area Geometri</string>
+
+    <!-- Shape Names -->
+    <string name="persegi">Persegi</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="jajar_genjang">Jajar Genjang</string>
+    <string name="trapesium">Trapesium</string>
+    <string name="layang_layang">Layang-Layang</string>
+    <string name="belah_ketupat">Belah Ketupat</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="elips">Elips</string>
+
+    <!-- Formulas -->
+    <string name="formula_persegi">s²</string>
+    <string name="formula_persegi_panjang">p × l</string>
+    <string name="formula_segitiga">½ × a × t</string>
+    <string name="formula_jajar_genjang">a × t</string>
+    <string name="formula_trapesium">½ × (a+b) × t</string>
+    <string name="formula_layang_layang">½ × d₁ × d₂</string>
+    <string name="formula_belah_ketupat">½ × d₁ × d₂</string>
+    <string name="formula_lingkaran">π × r²</string>
+    <string name="formula_elips">π × a × b</string>
+
+    <!-- UI Text -->
+    <string name="subtitle">Pilih bentuk untuk menghitung luas</string>
+</resources>

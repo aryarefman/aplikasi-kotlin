@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Trapezium dengan top lebih kecil dari bottom, scaled to match circle -->
+    <path
+        android:pathData="M36,24 L84,24 L102,96 L18,96 Z"
+        android:fillColor="#FF9800" />
+</vector>

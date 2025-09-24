@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Triangle dari top center ke bottom corners, scaled to match circle -->
+    <path
+        android:pathData="M60,18 L102,96 H18 Z"
+        android:fillColor="#4CAF50" />
+</vector>
