@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#1565C0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Google Maps Integration"
+                android:textSize="22sp"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/sen_bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Tracking &amp; Marker Management System"
+                android:textSize="13sp"
+                android:textColor="#BBDEFB"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/sen_regular" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@android:drawable/ic_menu_mylocation"
+                            android:tint="#1565C0"
+                            android:contentDescription="Location icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Current Location Tracking"
+                            android:textSize="16sp"
+                            android:textColor="#1565C0"
+                            android:fontFamily="@font/sen_semibold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get your current GPS coordinates and display on map"
+                        android:textSize="13sp"
+                        android:textColor="#616161"
+                        android:layout_marginBottom="12dp"
+                        android:fontFamily="@font/sen_regular" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_my_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Get My Location"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/sen_medium"
+                        android:backgroundTint="#1565C0"
+                        style="@style/Widget.Material3.Button"
+                        android:paddingVertical="12dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="12dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical">
+
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                android:src="@android:drawable/ic_menu_add"
+                                android:tint="#1565C0"
+                                android:contentDescription="Add icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:text="Manual Coordinate"
+                                android:textSize="16sp"
+                                android:textColor="#1565C0"
+                                android:fontFamily="@font/sen_semibold" />
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_search_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Search Location"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/sen_medium"
+                            android:backgroundTint="#1565C0"
+                            style="@style/Widget.Material3.Button"
+                            app:icon="@android:drawable/ic_menu_search"
+                            app:iconGravity="start" />
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Latitude"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+                        app:startIconTint="#1565C0"
+                        app:boxStrokeColor="#1565C0"
+                        app:hintTextColor="#1565C0"
+                        app:helperText="Range: -90.0000 to 90.0000"
+                        android:layout_marginBottom="10dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/sen_regular" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Longitude"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        app:startIconDrawable="@android:drawable/ic_menu_mylocation"
+                        app:startIconTint="#1565C0"
+                        app:boxStrokeColor="#1565C0"
+                        app:hintTextColor="#1565C0"
+                        app:helperText="Range: -180.0000 to 180.0000"
+                        android:layout_marginBottom="12dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/input_longitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="numberSigned|numberDecimal"
+                            android:maxLines="1"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/sen_regular" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_clear"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Clear"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/sen_medium"
+                            android:textColor="#616161"
+                            app:strokeColor="#BDBDBD"
+                            style="@style/Widget.Material3.Button.OutlinedButton"
+                            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+                            app:iconTint="#616161"
+                            app:iconGravity="start"
+                            android:layout_marginEnd="6dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btn_add_marker"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Add Marker"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/sen_medium"
+                            android:backgroundTint="#1565C0"
+                            style="@style/Widget.Material3.Button"
+                            app:icon="@android:drawable/ic_input_add"
+                            app:iconGravity="start"
+                            android:layout_marginStart="6dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="#E3F2FD"
+                app:cardElevation="0dp"
+                app:strokeWidth="1dp"
+                app:strokeColor="#90CAF9"
+                android:layout_marginBottom="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="6dp">
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@android:drawable/ic_dialog_info"
+                            android:tint="#1565C0"
+                            android:contentDescription="Info icon" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="How to Use"
+                            android:textSize="13sp"
+                            android:textColor="#1565C0"
+                            android:fontFamily="@font/sen_semibold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1. Input koordinat → Klik Search Location (preview)\n2. Klik Add Marker untuk tambah marker\n3. Klik marker di peta untuk hapus\n\nSample: Surabaya -7.2575, 112.7521"
+                        android:textSize="12sp"
+                        android:textColor="#1976D2"
+                        android:lineSpacingExtra="2dp"
+                        android:fontFamily="@font/sen_regular" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_clear_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear All Markers"
+                android:textSize="13sp"
+                android:fontFamily="@font/sen_medium"
+                android:textColor="#D32F2F"
+                app:strokeColor="#D32F2F"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                app:icon="@android:drawable/ic_menu_delete"
+                app:iconTint="#D32F2F"
+                app:iconGravity="start" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
